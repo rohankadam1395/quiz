@@ -1,0 +1,32 @@
+config:
+  target: 'http://localhost:8080'
+  phases:
+    - duration: 60
+      arrivalRate: 10
+  payload:
+    - path: "./load_csv/users.csv"
+      fields:
+        - userId
+  defaults:
+    headers:
+      Content-Type: application/json
+
+scenarios:
+  - flow:
+    -loop:
+      - think: 1
+      count: 100
+      - post:
+          url: "/submit-answers"
+          json:
+            userId: "{{ userId }}"
+            name: "User {{ userId }}"
+            email: "user{{ userId }}@example.com"
+            answers:
+              - questionId: 1
+                answer: "A"
+              - questionId: 2
+                answer: "B"
+              - questionId: 3
+                answer: "C"
+
