@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.15d580ac.css",
+    "main.js": "/static/js/main.44e648e5.js",
+    "static/js/453.2b0627e5.chunk.js": "/static/js/453.2b0627e5.chunk.js",
+    "static/media/cctech_icon.svg": "/static/media/cctech_icon.162ef06bcac71af68773202652433517.svg",
+    "index.html": "/index.html",
+    "main.15d580ac.css.map": "/static/css/main.15d580ac.css.map",
+    "main.44e648e5.js.map": "/static/js/main.44e648e5.js.map",
+    "453.2b0627e5.chunk.js.map": "/static/js/453.2b0627e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15d580ac.css",
+    "static/js/main.44e648e5.js"
+  ]
+}
